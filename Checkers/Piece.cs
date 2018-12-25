@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Checkers
 {
-    enum Piece
+    public enum Piece
     {
         KING,
         PAWN,
