@@ -5,6 +5,7 @@ namespace Checkers
     public class Cell
     {
         public Cell() { }
-            public bool Team { get; set;  }
+        public bool team { get; set;  }
+        public Piece piece  { get; set; }
     }
 }
