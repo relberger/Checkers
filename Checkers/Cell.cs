@@ -1,9 +1,10 @@
 ﻿using System;
 
-public class Cell
+namespace Checkers
 {
-	public Cell()
-	{
-        public bool Team { get; set;}
-	}
+    public class Cell
+    {
+        public Cell() { }
+            public bool Team { get; set;  }
+    }
 }
