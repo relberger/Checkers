@@ -6,10 +6,27 @@ using System.Threading.Tasks;
 
 namespace Checkers
 {
-    public enum Piece
+    public class Piece
     {
-        KING,
-        PAWN,
-        EMPTY
+        public Piece(Colors color, PieceTypes pieceType)
+        {
+            Color= color;
+            PieceType = pieceType;
+        }
+
+        public Colors Color { get; set; }
+        public PieceTypes PieceType { get; set; }
+
+        public enum Colors
+        {
+            BLACK, RED
+        }
+
+        public enum PieceTypes
+        {
+            KING,
+            PAWN
+        }
     }
+    
 }
