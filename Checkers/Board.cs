@@ -8,11 +8,13 @@ namespace Checkers
 {
     class Board
     {
-        Cell [,] board = new Cell [8,8];
+        Cell[,] gameBoard = new Cell[8, 8];
+
+        public Cell[,] GameBoard { get => gameBoard; set => gameBoard = value; }
 
         public Board()
         {
-            initBoard(board);
+            initBoard(gameBoard);
         }
 
         public void initBoard(Cell [,] board)
@@ -25,6 +27,26 @@ namespace Checkers
                 }
             }
         }
+
+        /***********/
+        internal bool atEdge()
+        {
+            //TODO 
+            throw new NotImplementedException();
+        }
+
+        internal bool validJump(int row, int col)
+        {
+            //TODO 
+            throw new NotImplementedException();
+        }
+
+        internal double heuristic()
+        {
+            //TODO 
+            throw new NotImplementedException();
+        }
+        /***********/
 
         public void theRealInit(Cell[,] board, int row, int col)
         {
