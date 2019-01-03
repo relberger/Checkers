@@ -29,6 +29,12 @@ namespace Checkers
         }
 
         /***********/
+        internal double heuristic()
+        {
+            //TODO 
+            throw new NotImplementedException();
+        }
+
         internal bool atEdge()
         {
             //TODO 
@@ -41,9 +47,8 @@ namespace Checkers
             throw new NotImplementedException();
         }
 
-        internal double heuristic()
+        internal Board jump(int row, int col, bool player)
         {
-            //TODO 
             throw new NotImplementedException();
         }
         /***********/

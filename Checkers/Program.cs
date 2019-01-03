@@ -18,7 +18,13 @@ namespace Checkers
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
             Board board = new Board();
-            board.
+            int depth = 4; //could definitely be higher but should be at least 4
+            double alpha = int.MinValue; //or -1.0. however we want to implement it
+            double beta = int.MaxValue; //or 1.0. however we want to implement it 
+            bool player = true; //initialize to true which is max/computer 
+
+            //whenever we end up calling alpabeta: 
+            AlphaBeta.AlphaBetaSearch(board, depth, alpha, beta, player);
         }
     }
 }
